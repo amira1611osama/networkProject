@@ -2,8 +2,15 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import About from "./components/About";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
+
 	return (
 		<>
 			<Navbar />
