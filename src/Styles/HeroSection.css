@@ -38,3 +38,12 @@
 	font-weight: bold;
 	margin-top: 15px;
 }
+
+@media (max-width: 991px) {
+	.hero-section .hero-container {
+		flex-direction: column;
+	}
+	.hero-section .hero-container .hero-image {
+		margin-top: 30px;
+	}
+}
