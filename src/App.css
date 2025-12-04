@@ -12,6 +12,7 @@
   height: 2px;
   background-color: var(--primary-color);
   transition: width 0.3s ease;
+  cursor: pointer;
 }
 .navbar-nav .nav-link:hover::before {
   width: 100%;  

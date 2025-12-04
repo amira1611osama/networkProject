@@ -1,0 +1,40 @@
+.hero-section {
+	position: relative;
+}
+
+.hero-section .hero-container .hero-image {
+	background-color: var(--bg-color);
+}
+
+.hero-section .hero-container .hero-image img {
+	width: 100%;
+}
+
+.hero-section .hero-container .content {
+	color: #323450;
+}
+
+.hero-section .hero-container .content h1 {
+	font-weight: bold;
+	font-size: 55px;
+	margin-bottom: 25px;
+}
+
+.hero-section .hero-container .content h1 span {
+	display: block;
+	color: #2f80ed;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.hero-section .hero-container .content p {
+	font-size: 20px;
+}
+
+.hero-section .hero-container .content button {
+	background-color: #2f80ed;
+	color: #fff;
+	padding: 15px 25px;
+	font-weight: bold;
+	margin-top: 15px;
+}
