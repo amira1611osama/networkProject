@@ -15,7 +15,9 @@ function HeroSection() {
 							Please, purchase full version of the template to get all sections,
 							features and permission to remove footer credit
 						</p>
-						<button>Download Now</button>
+						<button type="button" class="btn">
+							Download Now
+						</button>
 					</div>
 					<div className="hero-image">
 						<img src={heroImage} alt="hero section image" />

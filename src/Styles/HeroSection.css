@@ -4,7 +4,37 @@
 
 .hero-section .hero-container .hero-image {
 	background-color: var(--bg-color);
-	/* position: absolute; */
-	right: 0;
-	top: 0;
+}
+
+.hero-section .hero-container .hero-image img {
+	width: 100%;
+}
+
+.hero-section .hero-container .content {
+	color: var(--secondary-color);
+}
+
+.hero-section .hero-container .content h1 {
+	font-weight: bold;
+	font-size: 55px;
+	margin-bottom: 25px;
+}
+
+.hero-section .hero-container .content h1 span {
+	display: block;
+	color: var(--primary-color);
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.hero-section .hero-container .content p {
+	font-size: 20px;
+}
+
+.hero-section .hero-container .content button {
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 15px 25px;
+	font-weight: bold;
+	margin-top: 15px;
 }
