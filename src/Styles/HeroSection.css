@@ -1,0 +1,10 @@
+.hero-section {
+	position: relative;
+}
+
+.hero-section .hero-container .hero-image {
+	background-color: var(--bg-color);
+	/* position: absolute; */
+	right: 0;
+	top: 0;
+}
