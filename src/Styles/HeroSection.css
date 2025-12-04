@@ -11,7 +11,7 @@
 }
 
 .hero-section .hero-container .content {
-	color: #323450;
+	color: var(--secondary-color);
 }
 
 .hero-section .hero-container .content h1 {
@@ -22,7 +22,7 @@
 
 .hero-section .hero-container .content h1 span {
 	display: block;
-	color: #2f80ed;
+	color: var(--primary-color);
 	font-size: 30px;
 	margin-bottom: 20px;
 }
@@ -32,7 +32,7 @@
 }
 
 .hero-section .hero-container .content button {
-	background-color: #2f80ed;
+	background-color: var(--primary-color);
 	color: #fff;
 	padding: 15px 25px;
 	font-weight: bold;
