@@ -1,17 +1,61 @@
 :root {
-  --primary-color: #2196f3;
-  --secondary-color: #323450;
-  --bg-color: #d5e6fb;
-  --subBg-color: #f3f3f3;
-  --main-transition: 0.3s;
+	--primary-color: #2196f3;
+	--secondary-color: #323450;
+	--bg-color: #d5e6fb;
+	--subBg-color: #f3f3f3;
+	--main-transition: 0.3s;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing:border-box; */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+.btn {
+	background-color: var(--primary-color) !important;
+	color: #fff !important;
+	padding: 20px 35px !important;
+	font-size: 18px !important;
+	font-weight: 500 !important;
+	position: relative;
+	z-index: 99;
+	overflow: hidden;
+}
+
+.btn::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	padding: 50%;
+	border-radius: 50%;
+	margin: auto;
+	background: rgba(0, 0, 0, 0.1);
+	z-index: -1;
+	transition: all 0.4s linear;
+	transform: translate(-50%, -50%) scale(0);
+	-webkit-transform: translate(-50%, -50%) scale(0);
+	-moz-transform: translate(-50%, -50%) scale(0);
+	-ms-transform: translate(-50%, -50%) scale(0);
+	-o-transform: translate(-50%, -50%) scale(0);
+}
+
+.btn:hover {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.btn:hover::after {
+	transform: translate(-50%, -50%) scale(1.5);
+	-webkit-transform: translate(-50%, -50%) scale(1.5);
+	-moz-transform: translate(-50%, -50%) scale(1.5);
+	-ms-transform: translate(-50%, -50%) scale(1.5);
+	-o-transform: translate(-50%, -50%) scale(1.5);
 }
