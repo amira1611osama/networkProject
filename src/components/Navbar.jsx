@@ -2,20 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import "../App.css";
-import Hero from"./Hero";
-import About from"./About";
-import Contact from"./Contact";
-import Pricing from"./Pricing";
-import Services from"./Services";
+// import Hero from"./Hero";
+// import About from"./About";
+// import Contact from"./Contact";
+// import Pricing from"./Pricing";
+// import Services from"./Footer";
 function Navbar() {
   return (
     <div className="container py-4">
 
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="#">
+        <a className="navbar-brand" to="#">
           <img src={logo} alt="logo" />
-        </Link>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -30,19 +30,19 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
             <li className="nav-item">
-              <Link className="nav-link active fw-semibold" aria-current="page" to={Hero}>
+              <a className="nav-link active fw-semibold" aria-current="page" to="#">
                 Home
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link fw-semibold" to={Services}>
+              <a className="nav-link fw-semibold" to="#">
                 Services
-              </Link>
+              </a>
             </li>            
             <li className="nav-item">
-              <Link className="nav-link fw-semibold" to={About}>
+              <a className="nav-link fw-semibold" to="#">
                 About
-              </Link>
+              </a>
             </li>            
             <li className="nav-item">
               <a className="nav-link fw-semibold" href="#">
@@ -50,9 +50,9 @@ function Navbar() {
               </a>
             </li>            
             <li className="nav-item">
-              <Link className="nav-link fw-semibold" to={Contact}>
+              <a className="nav-link fw-semibold" to="#">
                 Contact
-              </Link>
+              </a>
             </li>            
             <li className="nav-item">
               <button className="btn btn-primary">
