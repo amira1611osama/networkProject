@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Pricing from "./components/Pricing";
 import Download from "./components/Download";
+import Contact from "./components/Contact";
 function App() {
 	useEffect(() => {
 		Aos.init({ duration: 1000 });
@@ -21,6 +22,7 @@ function App() {
 			<Download />
 			<Pricing />
 			<Download />
+			<Contact />
 		</>
 	);
 }
