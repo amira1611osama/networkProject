@@ -3,7 +3,7 @@ import "../Styles/Download.css";
 function Download() {
 	return (
 		<>
-			<div className="download-section">
+			<div className="download-section pt-5">
 				<div className="container download-container">
 					<div className="content">
 						<h4 data-aos="fade-right">
