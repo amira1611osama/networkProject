@@ -1,0 +1,142 @@
+.contact-form {
+	background-color: var(--subBg-color);
+	padding: 100px 0;
+	margin-top: 100px;
+	/* width: 100%; */
+	/* max-width: 900px; */
+}
+
+.contact-form .contact-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	flex-wrap: wrap;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	flex: 3;
+}
+
+.form-row {
+	display: flex;
+	gap: 25px;
+}
+
+.form-group {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+label {
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--secondary-color);
+}
+
+.input-box {
+	position: relative;
+	border: 1.8px solid var(--secondary-color);
+	border-radius: 8px;
+	padding: 14px 16px;
+	display: flex;
+	align-items: center;
+}
+
+.input-box input,
+.input-box textarea {
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+	background: transparent;
+	resize: none;
+}
+
+input:focus .input-box {
+	border: 1.8px solid var(--primary-color);
+}
+
+.input-box .icon {
+	position: absolute;
+	right: 18px;
+	font-size: 1.1rem;
+	color: var(--secondary-color);
+}
+
+.textarea-box {
+	padding: 18px 16px;
+}
+
+form .butn {
+	width: max-content;
+}
+
+@media (max-width: 768px) {
+	.form-row {
+		flex-direction: column;
+	}
+}
+
+.contact-form .contact-container .get-in-touch {
+	flex: 2;
+}
+
+.contact-form .contact-container .get-in-touch h6 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: var(--secondary-color);
+}
+
+.contact-form .contact-container .get-in-touch p {
+	font-size: 1rem;
+	color: #585978;
+	margin: 10px 0 40px 0;
+}
+
+.contact-form .contact-container .get-in-touch .data {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.contact-form .contact-container .get-in-touch .data p {
+	margin: 0;
+	color: #585978;
+}
+
+.contact-form .contact-container .get-in-touch .data .icon {
+	background-color: var(--primary-color);
+	color: #fff;
+	min-width: 3.2rem;
+	min-height: 3.2rem;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	position: relative;
+}
+
+.contact-form .contact-container .get-in-touch .data .icon i {
+	font-size: 1.5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
+@media (max-width: 990px) {
+	.contact-form .contact-container {
+		flex-direction: column-reverse;
+	}
+}

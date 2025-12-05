@@ -6,17 +6,17 @@ import Team3 from "../assets/team-3.png";
 import Team4 from "../assets/team-4.png";
 function OurTeam() {
   return (
-    <div className="OurTeam-section">
+    <div className="OurTeam-section py-5">
       <div className="container">
-        <div className="title-ourTeam">
-          <h3>Our Team</h3>
-          <p>
+        <div className="title-ourTeam pb-4">
+          <h3 data-aos="fade-right">Our Team</h3>
+          <p data-aos="fade-left">
             Stop wasting time and money designing and managing a website that
             doesn’t get results. Happiness guaranteed!
           </p>
         </div>
         <div className="cards">
-          <div className="card p-4">
+          <div className="card p-4" data-aos="fade-right">
             <div className="image-ourTeam">
               <img src={Team1} className="card-img-top rounded" alt="team1" />
             </div>
@@ -47,7 +47,7 @@ function OurTeam() {
               </div>
             </div>
           </div>
-          <div className="card p-4">
+          <div className="card p-4" data-aos="fade-up">
             <div className="image-ourTeam">
               <img src={Team2} className="card-img-top rounded" alt="team1" />
             </div>
@@ -78,7 +78,7 @@ function OurTeam() {
               </div>
             </div>
           </div>
-          <div className="card p-4">
+          <div className="card p-4" data-aos="fade-down">
             <div className="image-ourTeam">
               <img src={Team3} className="card-img-top rounded" alt="team1" />
             </div>
@@ -109,7 +109,7 @@ function OurTeam() {
               </div>
             </div>
           </div>
-          <div className="card p-4">
+          <div className="card p-4" data-aos="fade-left">
             <div className="image-ourTeam">
               <img src={Team4} className="card-img-top rounded" alt="team1" />
             </div>
