@@ -16,7 +16,7 @@
 	-o-box-sizing: border-box;
 }
 
-.btn {
+.butn {
 	background-color: var(--primary-color) !important;
 	color: #fff !important;
 	padding: 20px 35px !important;
@@ -25,9 +25,10 @@
 	position: relative;
 	z-index: 99;
 	overflow: hidden;
+	border: none;
 }
 
-.btn::after {
+.butn::after {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -47,12 +48,12 @@
 	-o-transform: translate(-50%, -50%) scale(0);
 }
 
-.btn:hover {
+.butn:hover {
 	background-color: var(--primary-color);
 	color: #fff;
 }
 
-.btn:hover::after {
+.butn:hover::after {
 	transform: translate(-50%, -50%) scale(1.5);
 	-webkit-transform: translate(-50%, -50%) scale(1.5);
 	-moz-transform: translate(-50%, -50%) scale(1.5);

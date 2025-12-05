@@ -1,6 +1,5 @@
 import heroImage from "../assets/hero-img.svg";
 import "../Styles/HeroSection.css";
-
 function HeroSection() {
 	return (
 		<>
@@ -15,17 +14,16 @@ function HeroSection() {
 							Please, purchase full version of the template to get all sections,
 							features and permission to remove footer credit
 						</p>
-						<button type="button" class="btn">
+						<button type="button" class="butn">
 							Download Now
 						</button>
 					</div>
-					<div className="hero-image">
-						<img src={heroImage} alt="hero section image" />
+					<div className="hero-image" data-aos="fade-right">
+						<img src={heroImage} alt="hero section image"  data-aos="fade-down-left"/>
 					</div>
 				</div>
 			</div>
 		</>
 	);
 }
-
 export default HeroSection;

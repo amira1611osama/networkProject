@@ -17,7 +17,7 @@
 }
 
 .about-section .about-container .content h2 {
-	font-size: 40px;
+	font-size: 2rem;
 	font-weight: 700;
 	color: var(--secondary-color);
 }
@@ -44,7 +44,7 @@
 }
 
 .about-section .about-container .stats span {
-	font-size: 30px;
+	font-size: 1.9rem;
 	font-weight: 700;
 }
 
