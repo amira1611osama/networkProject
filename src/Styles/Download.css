@@ -1,0 +1,25 @@
+.download-section {
+	position: relative;
+}
+
+.download-section .download-container .content {
+	color: var(--secondary-color);
+}
+
+.download-section .download-container .content h4 {
+  width: 100%;
+	font-weight: bold;
+	font-size: 3.5rem;
+	margin-bottom: 25px;
+}
+
+.download-section .download-container .content h4 span {
+	display: block;
+	font-size: 2rem;
+  color: #585978;
+}
+
+.download-section .download-container .content p {
+  width: 100%;
+	font-size: 1rem;
+}
