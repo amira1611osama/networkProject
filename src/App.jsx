@@ -6,6 +6,7 @@ import About from "./components/About";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import OurTeam from "./components/OurTeam";
 function App() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -16,6 +17,7 @@ function App() {
       <HeroSection />
       <Services />
       <About />
+      <OurTeam/>
     </>
   );
 }
