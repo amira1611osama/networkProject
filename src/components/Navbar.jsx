@@ -9,7 +9,7 @@ import "../App.css";
 // import Services from"./Footer";
 function Navbar() {
 	return (
-		<div className="container py-4">
+		<div className="container py-4" data-aos="fade-down">
 			<nav className="navbar navbar-expand-lg ">
 				<div className="container-fluid">
 					<a className="navbar-brand" to="#">

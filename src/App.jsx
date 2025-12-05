@@ -3,13 +3,13 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import About from "./components/About";
-// import Aos from "aos";
-// import "aos/dist/aos.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 function App() {
-  // useEffect(() => {
-  //   Aos.init({ duration: 1000 });
-  // }, []);
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <Navbar />

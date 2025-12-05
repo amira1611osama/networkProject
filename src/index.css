@@ -6,6 +6,10 @@
 	--main-transition: 0.3s;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -17,15 +21,20 @@
 }
 
 .butn {
-	background-color: var(--primary-color) !important;
-	color: #fff !important;
-	padding: 20px 35px !important;
-	font-size: 18px !important;
-	font-weight: 500 !important;
-	position: relative;
-	z-index: 99;
-	overflow: hidden;
-	border: none;
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+  padding: 20px 35px !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  position: relative;
+  z-index: 99;
+  overflow: hidden;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .butn::after {

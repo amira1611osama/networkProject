@@ -1,10 +1,9 @@
 .about-section {
-	padding: 10px 0;
+	padding-block: 100px;
 	background-color: var(--subBg-color);
 }
 
 .about-section .about-container {
-	margin-block: 100px;
 	gap: 70px !important;
 }
 
@@ -32,6 +31,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 2rem;
 	color: var(--secondary-color);
 	text-align: center;
 	margin-block: 40px;
@@ -49,33 +49,31 @@
 }
 
 .about-section .about-container .stats p {
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 500;
 	color: #63647b;
 	margin: 0;
 }
 
-.about-section .about-container .stats hr {
+.about-section .about-container .stats .divider {
 	background-color: var(--secondary-color);
-	width: 70px;
-	height: 2px;
-	border: none;
-	opacity: 1;
-	rotate: 90deg;
-}
-
-.about-section .about-container .stats hr {
-	background-color: var(--secondary-color);
-	width: 70px;
-	height: 2px;
-	border: none;
-	opacity: 1;
-	rotate: 90deg;
+	width: 3px;
+	height: 2rem;
 }
 
 @media (max-width: 991px) {
 	.about-section .about-container {
 		flex-direction: column;
 		gap: 30px !important;
+	}
+
+	.about-section .about-container .stats {
+		flex-direction: column;
+	}
+
+	.about-section .about-container .stats .divider {
+		background-color: var(--secondary-color);
+		width: 4rem;
+		height: 3px;
 	}
 }
