@@ -1,20 +1,20 @@
 import plan1 from "../assets/pricing-1.svg";
 import plan2 from "../assets/pricing-2.svg";
 import plan3 from "../assets/pricing-3.svg";
-import "../Styles/Pricing.css"
+import "../Styles/Pricing.css";
 
 function Pricing() {
 	return (
 		<>
 			<section className="pricing-section">
 				<div className="container pricing-container">
-					<div className="section-header" data-aos="fade-down">
+					<header className="section-header" data-aos="fade-down">
 						<h3>Pricing Plan</h3>
 						<p>
 							Stop wasting time and money designing and managing a website that
 							doesn’t get results. Happiness guaranteed!
 						</p>
-					</div>
+					</header>
 					<div className="plans">
 						<div className="plan" data-aos="fade-right">
 							<div className="image">
@@ -29,7 +29,7 @@ function Pricing() {
 								<li>Super friendly support team</li>
 								<li>Awesome Support</li>
 							</ul>
-              <button class="butn">Get Started</button>
+							<button class="butn">Get Started</button>
 						</div>
 						<div className="plan popular" data-aos="fade-down">
 							<div className="image">
@@ -44,7 +44,7 @@ function Pricing() {
 								<li>Super friendly support team</li>
 								<li>Awesome Support</li>
 							</ul>
-              <button class="butn">Get Started</button>
+							<button class="butn">Get Started</button>
 						</div>
 						<div className="plan" data-aos="fade-left">
 							<div className="image">
@@ -59,7 +59,7 @@ function Pricing() {
 								<li>Super friendly support team</li>
 								<li>Awesome Support</li>
 							</ul>
-              <button class="butn">Get Started</button>
+							<button class="butn">Get Started</button>
 						</div>
 					</div>
 				</div>
