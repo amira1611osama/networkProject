@@ -23,7 +23,7 @@ function OurTeam() {
   ];
 
   return (
-    <div className="OurTeam-section py-5">
+    <section className="OurTeam-section py-5">
       <div className="container">
         <div className="title-ourTeam pb-4">
           <h3 data-aos="fade-right">Our Team</h3>
@@ -54,7 +54,7 @@ function OurTeam() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

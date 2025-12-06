@@ -2,7 +2,7 @@ import aboutImage from "../assets/about-img.jpg";
 import "../Styles/About.css";
 function About() {
 	return (
-		<div className="about-section">
+		<section className="about-section">
 			<div className="container about-container d-flex align-items-center justify-content-between">
 				<div className="about-image" data-aos="fade-right">
 					<img src={aboutImage} alt="About Image" loading="lazy" />
@@ -38,7 +38,7 @@ function About() {
 					</button>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 export default About;

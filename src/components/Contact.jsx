@@ -2,7 +2,7 @@ import "../Styles/Contact.css";
 import { FaCommentDots, FaPhone, FaEnvelope, FaUser } from "react-icons/fa";
 function Contact() {
 	return (
-		<div className="contact-form">
+		<section className="contact-form">
 			<div className="container contact-container">
 				<form data-aos="fade-right">
 					<div className="form-row">
@@ -79,7 +79,7 @@ function Contact() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 

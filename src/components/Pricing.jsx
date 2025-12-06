@@ -6,7 +6,7 @@ import "../Styles/Pricing.css"
 function Pricing() {
 	return (
 		<>
-			<div className="pricing-section">
+			<section className="pricing-section">
 				<div className="container pricing-container">
 					<div className="section-header" data-aos="fade-down">
 						<h3>Pricing Plan</h3>
@@ -63,7 +63,7 @@ function Pricing() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		</>
 	);
 }

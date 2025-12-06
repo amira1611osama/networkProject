@@ -3,7 +3,7 @@ import "../Styles/Services.css";
 import ServiceImage from "../assets/feature-2-1.svg";
 function Services() {
   return (
-    <div className="allService">
+    <section className="allService">
     <div className="serviceSection  position-relative">
       <div className="container py-5">
         <div className="title-service py-4">
@@ -70,7 +70,7 @@ function Services() {
         </div>
       </div>
     </div>
-    </div>
+    </section>
   );
 }
 export default Services;
