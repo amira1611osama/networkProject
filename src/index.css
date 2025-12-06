@@ -5,6 +5,10 @@
 	--subBg-color: #f3f3f3;
 	--main-transition: 0.3s;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   overflow-x: hidden !important;

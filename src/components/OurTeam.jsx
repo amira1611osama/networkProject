@@ -4,7 +4,24 @@ import Team1 from "../assets/team-1.png";
 import Team2 from "../assets/team-2.png";
 import Team3 from "../assets/team-3.png";
 import Team4 from "../assets/team-4.png";
+
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithubAlt } from "react-icons/fa";
+
 function OurTeam() {
+  const teamMembers = [
+    { name: "Gray Simon", role: "Frontend Developer", img: Team1 },
+    { name: "John Doe", role: "Creative Designer", img: Team2 },
+    { name: "David Endow", role: "Product Designer", img: Team3 },
+    { name: "Jonathon Smith", role: "Creative Designer", img: Team4 },
+  ];
+
+  const socialIcons = [
+    { icon: <FaFacebookF />, link: "#" },
+    { icon: <FaInstagram />, link: "#" },
+    { icon: <FaLinkedinIn />, link: "#" },
+    { icon: <FaGithubAlt />, link: "#" },
+  ];
+
   return (
     <div className="OurTeam-section py-5">
       <div className="container">
@@ -15,134 +32,30 @@ function OurTeam() {
             doesn’t get results. Happiness guaranteed!
           </p>
         </div>
+
         <div className="cards">
-          <div className="card p-4" data-aos="fade-right">
-            <div className="image-ourTeam">
-              <img src={Team1} className="card-img-top rounded" alt="team1" />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title fw-bold">Gray Simon</h5>
-              <p className="card-text">Frontend Developer</p>
-              <div className="icons-ourTeam d-flex justify-content-center gap-2">
-                <div className="circle-icon">
-                  <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="#">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="#">
-                    <i class="fa-brands fa-github-alt"></i>
-                  </a>
+          {teamMembers.map((member, idx) => (
+            <div className="card p-4" data-aos={idx % 2 === 0 ? "fade-right" : "fade-left"} key={idx}>
+              <div className="image-ourTeam">
+                <img src={member.img} className="card-img-top rounded" alt={member.name} />
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title fw-bold">{member.name}</h5>
+                <p className="card-text">{member.role}</p>
+                <div className="icons-ourTeam d-flex justify-content-center gap-2">
+                  {socialIcons.map((item, i) => (
+                    <div className="circle-icon" key={i}>
+                      <a href={item.link}>{item.icon}</a>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
-          </div>
-          <div className="card p-4" data-aos="fade-up">
-            <div className="image-ourTeam">
-              <img src={Team2} className="card-img-top rounded" alt="team1" />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title fw-bold">John Doe</h5>
-              <p className="card-text">Creative Designer</p>
-              <div className="icons-ourTeam d-flex justify-content-center gap-2">
-                <div className="circle-icon">
-                  <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="#">
-                    <i class="fa-brands fa-github-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="card p-4" data-aos="fade-down">
-            <div className="image-ourTeam">
-              <img src={Team3} className="card-img-top rounded" alt="team1" />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title fw-bold">David Endow</h5>
-              <p className="card-text">Product Designer</p>
-              <div className="icons-ourTeam d-flex justify-content-center gap-2">
-                <div className="circle-icon">
-                  <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="#">
-                    <i class="fa-brands fa-github-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="card p-4" data-aos="fade-left">
-            <div className="image-ourTeam">
-              <img src={Team4} className="card-img-top rounded" alt="team1" />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title fw-bold">Jonathon Smith</h5>
-              <p className="card-text">Creative Designer</p>
-              <div className="icons-ourTeam d-flex justify-content-center gap-2">
-                <div className="circle-icon">
-                  <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </div>
-                <div className="circle-icon">
-                  <a href="#">
-                    <i class="fa-brands fa-github-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
   );
 }
+
 export default OurTeam;
