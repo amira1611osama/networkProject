@@ -1,10 +1,5 @@
 import "../Styles/Contact.css";
-import { 
-  FaCommentDots, 
-  FaPhone, 
-  FaEnvelope, 
-  FaUser 
-} from "react-icons/fa";
+import { FaCommentDots, FaPhone, FaEnvelope, FaUser } from "react-icons/fa";
 function Contact() {
 	return (
 		<div className="contact-form">
@@ -23,7 +18,7 @@ function Contact() {
 							<label>Email</label>
 							<div className="input-box">
 								<input type="email" placeholder="Email" />
-								<FaEnvelope className="icon"/>
+								<FaEnvelope className="icon" />
 							</div>
 						</div>
 					</div>
@@ -33,7 +28,7 @@ function Contact() {
 							<label>Number</label>
 							<div className="input-box">
 								<input type="text" placeholder="Number" />
-								<FaPhone/>
+								<FaPhone />
 							</div>
 						</div>
 
@@ -41,7 +36,7 @@ function Contact() {
 							<label>Subject</label>
 							<div className="input-box">
 								<input type="text" placeholder="Subject" />
-								<FaCommentDots/>
+								<FaCommentDots />
 							</div>
 						</div>
 					</div>

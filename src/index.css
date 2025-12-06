@@ -5,13 +5,14 @@
 	--subBg-color: #f3f3f3;
 	--main-transition: 0.3s;
 }
+
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
-
+html,
 body {
-  overflow-x: hidden !important;
+	overflow-x: hidden !important;
 }
 
 * {
@@ -25,20 +26,20 @@ body {
 }
 
 .butn {
-  background-color: var(--primary-color) !important;
-  color: #fff !important;
-  padding: 20px 35px !important;
-  font-size: 18px !important;
-  font-weight: 500 !important;
-  position: relative;
-  z-index: 99;
-  overflow: hidden;
-  border: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+	background-color: var(--primary-color) !important;
+	color: #fff !important;
+	padding: 20px 35px !important;
+	font-size: 18px !important;
+	font-weight: 500 !important;
+	position: relative;
+	z-index: 99;
+	overflow: hidden;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
 
 .butn::after {
