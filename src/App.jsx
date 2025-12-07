@@ -10,39 +10,42 @@ import Footer from "./components/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ScrollToTopBtn from "./components/ScrollToTopBtn";
 function App() {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
-  return (
-    <>
-      <Navbar />
-      <div id="hero">
-        <HeroSection />
-      </div>
-      <div id="services">
-        <Services />
-      </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="download">
-        <Download />
-      </div>
-      <div id="pricing">
-        <Pricing />
-      </div>
-      <div id="ourteam">
-        <OurTeam />
-      </div>
-      <div id="download">
-        <Download />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
-      <Footer />
-    </>
-  );
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
+
+	return (
+		<>
+			<Navbar />
+			<div id="hero">
+				<HeroSection />
+			</div>
+			<div id="services">
+				<Services />
+			</div>
+			<div id="about">
+				<About />
+			</div>
+			<div id="download">
+				<Download />
+			</div>
+			<div id="pricing">
+				<Pricing />
+			</div>
+			<div id="ourteam">
+				<OurTeam />
+			</div>
+			<div id="download">
+				<Download />
+			</div>
+			<div id="contact">
+				<Contact />
+			</div>
+			<Footer />
+			<ScrollToTopBtn />
+		</>
+	);
 }
 export default App;
