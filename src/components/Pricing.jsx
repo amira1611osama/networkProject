@@ -6,7 +6,7 @@ import "../Styles/Pricing.css";
 function Pricing() {
 	return (
 		<>
-			<section className="pricing-section">
+			<section className="pricing-section" id="pricing">
 				<div className="container pricing-container">
 					<header className="section-header" data-aos="fade-down">
 						<h3>Pricing Plan</h3>
@@ -16,7 +16,7 @@ function Pricing() {
 						</p>
 					</header>
 					<div className="plans">
-						<div className="plan" data-aos="fade-right">
+						<div className="plan" data-aos="fade-up">
 							<div className="image">
 								<img src={plan1} alt="Web Design" loading="lazy" />
 							</div>
@@ -46,7 +46,7 @@ function Pricing() {
 							</ul>
 							<button class="butn">Get Started</button>
 						</div>
-						<div className="plan" data-aos="fade-left">
+						<div className="plan" data-aos="fade-up">
 							<div className="image">
 								<img src={plan3} alt="Web Design" loading="lazy" />
 							</div>

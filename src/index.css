@@ -10,19 +10,19 @@ html {
 	scroll-behavior: smooth;
 }
 
-html,
+/* html,
 body {
 	overflow-x: hidden !important;
-}
+} */
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+	/* -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
+	-o-box-sizing: border-box; */
 }
 
 .butn {
@@ -36,10 +36,10 @@ body {
 	overflow: hidden;
 	border: none;
 	border-radius: 5px;
-	-webkit-border-radius: 5px;
+	/* -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
+	-o-border-radius: 5px; */
 }
 
 .butn::after {
@@ -56,10 +56,10 @@ body {
 	z-index: -1;
 	transition: all 0.4s linear;
 	transform: translate(-50%, -50%) scale(0);
-	-webkit-transform: translate(-50%, -50%) scale(0);
+	/* -webkit-transform: translate(-50%, -50%) scale(0);
 	-moz-transform: translate(-50%, -50%) scale(0);
 	-ms-transform: translate(-50%, -50%) scale(0);
-	-o-transform: translate(-50%, -50%) scale(0);
+	-o-transform: translate(-50%, -50%) scale(0); */
 }
 
 .butn:hover {
@@ -69,8 +69,8 @@ body {
 
 .butn:hover::after {
 	transform: translate(-50%, -50%) scale(1.5);
-	-webkit-transform: translate(-50%, -50%) scale(1.5);
+	/* -webkit-transform: translate(-50%, -50%) scale(1.5);
 	-moz-transform: translate(-50%, -50%) scale(1.5);
 	-ms-transform: translate(-50%, -50%) scale(1.5);
-	-o-transform: translate(-50%, -50%) scale(1.5);
+	-o-transform: translate(-50%, -50%) scale(1.5); */
 }

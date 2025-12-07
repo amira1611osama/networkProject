@@ -3,21 +3,21 @@ import "../Styles/Services.css";
 import ServiceImage from "../assets/feature-2-1.svg";
 function Services() {
   return (
-    <section className="allService">
+    <section className="allService" id="services">
     <div className="serviceSection  position-relative">
       <div className="container py-5">
         <div className="title-service py-4">
           <h2 data-aos="fade-down" className=" my-3">
             The future of <br /> designing starts here
           </h2>
-          <p data-aos="fade-left">
+          <p data-aos="fade-up">
             Stop wasting time and money designing and managing a website that
             doesn’t get results. Happiness guaranteed!
           </p>
         </div>
         <div className="row flex-wrap my-3">
           <div className="col-md-4">
-            <div className="feature-box" data-aos="fade-down-right">
+            <div className="feature-box" data-aos="fade-down">
               <div className="icon">
                 <i class="fa-solid fa-code-merge"></i>
               </div>
@@ -28,7 +28,7 @@ function Services() {
                 </p>
               </div>
             </div>
-            <div className="feature-box" data-aos="fade-up-right">
+            <div className="feature-box" data-aos="fade-up">
               <div className="icon">
                 <i class="fa-solid fa-laptop-code"></i>
               </div>
@@ -41,7 +41,7 @@ function Services() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="feature-box" data-aos="fade-down-left">
+            <div className="feature-box" data-aos="fade-down">
               <div className="icon">
                 <i class="fa-solid fa-window-restore"></i>
               </div>
@@ -52,7 +52,7 @@ function Services() {
                 </p>
               </div>
             </div>
-            <div className="feature-box" data-aos="fade-up-left">
+            <div className="feature-box" data-aos="fade-up">
               <div className="icon">
                 <i class="fa-solid fa-file-code"></i>
               </div>
