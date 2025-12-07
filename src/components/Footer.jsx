@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="footer-section">
       <div className="container footer-container">
-        <div className="footer-column logo-col" data-aos="fade-right">
+        <div className="footer-column logo-col" data-aos="fade-down">
           <h2 className="footer-logo">FLAT</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis nulla placerat amet amet congue.</p>
           <div className="footer-socials">
@@ -34,7 +34,7 @@ function Footer() {
             <li><a href="#">Blog Writing</a></li>
           </ul>
         </div>
-        <div className="footer-column" data-aos="fade-left">
+        <div className="footer-column" data-aos="fade-down">
           <h4>Help & Support</h4>
           <ul>
             <li><a href="#">Support Center</a></li>

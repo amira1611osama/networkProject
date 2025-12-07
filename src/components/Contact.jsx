@@ -2,9 +2,9 @@ import "../Styles/Contact.css";
 import { FaCommentDots, FaPhone, FaEnvelope, FaUser } from "react-icons/fa";
 function Contact() {
 	return (
-		<section className="contact-form">
+		<section className="contact-form" id="contact">
 			<div className="container contact-container">
-				<form data-aos="fade-right">
+				<form data-aos="fade-up">
 					<div className="form-row">
 						<div className="form-group">
 							<label>Name</label>
@@ -59,19 +59,19 @@ function Contact() {
 						Stop wasting time and money designing and managing a website that
 						doesn’t get results. Happiness guaranteed!
 					</p>
-					<div className="data phone" data-aos="fade-left">
+					<div className="data phone" data-aos="fade-down">
 						<div className="icon">
 							<i class="fa-solid fa-phone" />
 						</div>
 						<p>0045939863784</p>
 					</div>
-					<div className="data email" data-aos="fade-left">
+					<div className="data email" data-aos="fade-down">
 						<div className="icon">
 							<i class="fa-solid fa-envelope" />
 						</div>
 						<p>yourmail@gmail.com</p>
 					</div>
-					<div className="data address" data-aos="fade-left">
+					<div className="data address" data-aos="fade-up">
 						<div className="icon">
 							<i class="fa-solid fa-location-dot" />
 						</div>

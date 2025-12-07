@@ -28,11 +28,11 @@ function OurTeam() {
 	];
 
 	return (
-		<section className="OurTeam-section py-5">
+		<section className="OurTeam-section py-5" id="ourteam">
 			<div className="container">
 				<header className="title-ourTeam pb-4">
-					<h3 data-aos="fade-right">Our Team</h3>
-					<p data-aos="fade-left">
+					<h3 data-aos="fade-up">Our Team</h3>
+					<p data-aos="fade-down">
 						Stop wasting time and money designing and managing a website that
 						doesn’t get results. Happiness guaranteed!
 					</p>
@@ -42,7 +42,7 @@ function OurTeam() {
 					{teamMembers.map((member, idx) => (
 						<div
 							className="card p-4"
-							data-aos={idx % 2 === 0 ? "fade-right" : "fade-left"}
+							data-aos={idx % 2 === 0 ? "fade-up" : "fade-down"}
 							key={idx}>
 							<div className="image-ourTeam">
 								<img
