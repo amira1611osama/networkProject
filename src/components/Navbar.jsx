@@ -19,7 +19,7 @@ function Navbar() {
     return () => sections.forEach((sec) => observer.unobserve(sec));
   }, []);
   return (
-    <div className="nav-container py-4">
+    <div className="nav-container py-2">
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <a className="navbar-brand" href="#">
@@ -71,21 +71,6 @@ function Navbar() {
                   href="#about"
                 >
                   About
-                </a>
-              </li>
-              <li
-                className="nav-item"
-                onClick={() => setActiveSection("download")}
-              >
-                <a
-                  className={
-                    activeSection === "download"
-                      ? "nav-link active"
-                      : "nav-link"
-                  }
-                  href="#download"
-                >
-                  Download
                 </a>
               </li>
               <li
